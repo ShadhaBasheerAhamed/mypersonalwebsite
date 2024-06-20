@@ -1,0 +1,259 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Algerian', sans-serif;
+    background-color: #f4abf0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+a {
+    color: #4C0033;
+    font-size: large;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 200ms;
+}
+
+.logo-img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+}
+
+.home {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content {
+    height: 60%;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-content__img {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #790252 solid 5px;
+    text-align: justify;
+}
+
+.home-content-para {
+    color: #E80F88;
+    text-align: right;
+    line-height: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Buttons */
+.btn, .btn-1 {
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #ed65b0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/* Content Sections */
+.about,
+.skills,
+.projects,
+.contact {
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    padding: 100px;
+    margin: 0 100px;
+    text-align: justify;
+    font-size: 18px;
+    color: #790252;
+}
+
+.proj-content {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 50px;
+    color: #AF0171;
+    font-size: 20px;
+}
+
+.snake {
+    padding-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 14px;
+    color: #790252;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #790252;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+    color: #060b10dc;
+}
+
+.devfolio,
+.linkedin,
+.gmail,
+.github {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* Skills Icons */
+.ms, .c, .py, .html, .css {
+    padding-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    fill: currentColor;
+} 
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    a {
+        font-size: medium;
+        padding: 10px 15px;
+    }
+
+    .home-content {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .home-content-para {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .home-content__img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 50px;
+        margin: 0 20px;
+        font-size: 16px;
+    }
+
+    .proj-content {
+        font-size: 16px;
+    }
+
+    .snake {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer {
+        padding: 20px;
+        font-size: 12px;
+    }
+
+    .footer .social-icons a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    ul {
+        padding: 10px;
+    }
+
+    a {
+        font-size: small;
+        padding: 5px 10px;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-content-para {
+        font-size: 14px;
+    }
+
+    .home-content__img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 20px;
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .proj-content {
+        font-size: 14px;
+    }
+
+    .snake {
+        width: 120px;
+        height: 120px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .footer .social-icons a {
+        font-size: 14px;
+    }
+}
